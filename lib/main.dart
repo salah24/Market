@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'features/splash/presentation/splash_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,16 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SplashView(),
     );
-  }
-}
-
-class SplashView extends StatelessWidget {
-  const SplashView({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }
