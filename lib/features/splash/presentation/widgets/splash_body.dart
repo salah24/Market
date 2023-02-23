@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 
-class SplashBody extends StatelessWidget {
+class SplashBody extends StatefulWidget {
   const SplashBody({Key? key}) : super(key: key);
 
+  @override
+  State<SplashBody> createState() => _SplashBodyState();
+}
+
+class _SplashBodyState extends State<SplashBody> {
+  AnimationController? animationController;
+
+  Animation? fadingAnimation;
   @override
   Widget build(BuildContext context) {
     return Container(
