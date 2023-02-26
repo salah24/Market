@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:market2023/features/on%20Boarding/presentation/onboarding_view.dart';
 
 class SplashBody extends StatefulWidget {
   const SplashBody({Key? key}) : super(key: key);
@@ -22,6 +24,15 @@ class _SplashBodyState extends State<SplashBody>
         Tween<double>(begin: .2, end: 1).animate(animationController!);
 
     animationController?.repeat(reverse: true);
+
+    goToNextView();
+  }
+
+  @override
+  void dispose() {
+    animationController?.dispose();
+    // TODO: implement dispose
+    super.dispose();
   }
 
   Widget build(BuildContext context) {
@@ -53,4 +64,8 @@ class _SplashBodyState extends State<SplashBody>
       ),
     );
   }
+}
+
+void goToNextView() {
+  Future.delayed(Duration(seconds: 3), (() {}));
 }

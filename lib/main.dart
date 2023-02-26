@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:market2023/features/on%20Boarding/presentation/onboarding_view.dart';
+import 'package:market2023/features/on%20Boarding/presentation/widgets/onboarding_body.dart';
 
 import 'features/splash/presentation/splash_view.dart';
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashView(),
+      home: OnBoardingView(),
     );
   }
 }
